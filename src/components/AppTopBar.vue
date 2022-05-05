@@ -3,7 +3,7 @@
     <v-app-bar hide-on-scroll app>
       
       <v-spacer />
-      <v-toolbar-title><h3><strong>Campanha de doação</strong>  </h3></v-toolbar-title>
+      <v-toolbar-title><h3><strong>Campanha de doação</strong> ICON </h3></v-toolbar-title>
       <v-spacer />
       <v-tooltip v-if="!$vuetify.theme.dark" bottom>
         <template v-slot:activator="{ on, attrs }">

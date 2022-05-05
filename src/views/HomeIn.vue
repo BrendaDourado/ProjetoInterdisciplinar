@@ -6,7 +6,7 @@
     <p class="text-home text-justify mt-5 ml-4 mr-4">
       descrição da ideia, com dashboards no futuro
     </p>
-    <v-btn @click="delay" color="blue" class="mr-4" type="submit"> Clique Aqui </v-btn>
+    <v-btn @click="delay" color="blue" class="mr-4" type="submit"> VENHA DOAR </v-btn>
   </v-container>
 </template>
 
@@ -22,7 +22,7 @@ methods: {
     },
       delay(){
         setTimeout(()=>{
-          this.$router.push('/cadastrocliente')
+          this.$router.push('DoarView')
           
           },100)
 

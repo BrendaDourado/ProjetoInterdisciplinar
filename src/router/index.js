@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeIn from '../views/HomeIn.vue'
 import CadastroCliente from '../views/CadastroCliente.vue'
 import LoginIn from '../views/LoginIn.vue'
+import DoarView from '../views/DoarView'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/CadastroCliente',
     name: 'CadastroCliente',
     component: CadastroCliente
+  },
+  {
+    path: '/DoarView',
+    name: 'DoarView',
+    component: DoarView
   },
   {
     path: '/LoginIn',

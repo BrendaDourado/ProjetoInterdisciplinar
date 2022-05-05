@@ -1,15 +1,28 @@
 <template>
-  <v-container fluid>
-    <div class="titulo">
-      <h1>O que você vai doar ?!</h1>
-      <p>
-        Detalhar o que vai ser doado com checkbox
-      </p>
-    </div>
-    <v-checkbox v-model="checkbox1" :label="`Agasalho:`"></v-checkbox>
-    <v-checkbox v-model="checkbox2" :label="` alimento :`"></v-checkbox>
-
-    <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
+<v-container>
+  <div class="inputs">
+    <v-text-field
+      label="LOGIN"
+    >
+    </v-text-field>
+    <v-text-field 
+    label="SENHA"></v-text-field>
+    <v-text-field 
+    label="NOME COMPLETO"></v-text-field>
+    <v-text-field 
+    label="NOME COMPLETO"></v-text-field>
+    <v-text-field 
+    label="NOME COMPLETO"></v-text-field>
+    <v-text-field 
+    label="NOME COMPLETO"></v-text-field>
+    <v-text-field 
+    label="NOME COMPLETO"></v-text-field>
+  </div>
+<div class= "botoes">
+  <v-btn class= "mb-4">
+    Enviar
+  </v-btn>
+</div>
   </v-container>
 </template>
 <script>
