@@ -1,16 +1,43 @@
 <template>
-  <h1> Inicio do projeto </h1>
+  <v-app>
+    <div id="app">
+      <nav>|
+        <AppTopBar />
+      </nav>
+      <router-view />
+    </div>
+  </v-app>
 </template>
 
 <script>
+import AppTopBar from "../src/components/AppTopBar.vue";
 export default {
-
-}
+  name: "App",
+  components: {
+    AppTopBar,
+  },
+};
 </script>
 
-<style scoped>
-h1 {
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-} 
+  color: #2c3e50;
+}
 
-</style>
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style> 
