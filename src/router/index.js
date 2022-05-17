@@ -4,6 +4,9 @@ import HomeIn from '../views/HomeIn.vue'
 import CadastroCliente from '../views/CadastroCliente.vue'
 import LoginIn from '../views/LoginIn.vue'
 import DoarView from '../views/DoarView'
+import CadastroInstituicao from '../views/CadastroInstituicao'
+import InstituicoesParceiras from '../views/InstituicoesParceiras'
+import AnaliseSugestao from '../views/AnaliseSugestao'
 
 Vue.use(VueRouter)
 
@@ -19,15 +22,31 @@ const routes = [
     component: CadastroCliente
   },
   {
+    path: '/LoginIn',
+    name: 'LoginIn',
+    component: LoginIn
+  },
+  {
+    path: '/CadastroInstituicao',
+    name: 'CadastroInstituicao',
+    component: CadastroInstituicao
+  },
+  {
+    path: '/InstituicoesParceiras',
+    name: 'InstituicoesParceiras',
+    component: InstituicoesParceiras
+  },
+  {
     path: '/DoarView',
     name: 'DoarView',
     component: DoarView
   },
   {
-    path: '/LoginIn',
-    name: 'LoginIn',
-    component: LoginIn
+    path: '/AnaliseSugestao',
+    name: 'AnaliseSugestao',
+    component: AnaliseSugestao
   }
+ 
 ]
 
 const router = new VueRouter({

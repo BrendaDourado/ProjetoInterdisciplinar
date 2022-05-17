@@ -1,11 +1,10 @@
 <template>
   <v-container>
     <div class="mt-5 home-img">
-    <!-- <img src=" " alt="Pascoa" /> --> 
     </div>
-    <p class="text-home text-justify mt-5 ml-4 mr-4">
+    <h1 class="text-home text-justify mt-5 ml-4 mr-4">
       descrição da ideia, com dashboards no futuro
-    </p>
+    </h1>
     <v-btn @click="delay" color="blue" class="mr-4" type="submit"> VENHA DOAR </v-btn>
   </v-container>
 </template>
@@ -23,7 +22,6 @@ methods: {
       delay(){
         setTimeout(()=>{
           this.$router.push('DoarView')
-          
           },100)
 
   },

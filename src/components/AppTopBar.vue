@@ -31,7 +31,7 @@
         </v-btn>
       </router-link>
 
-        <router-link to="/InstituicaoParceira">
+        <router-link to="/InstituicoesParceiras">
         <v-btn>
           <span>Instituições parceiras</span>
           <v-icon>mdi-store</v-icon>

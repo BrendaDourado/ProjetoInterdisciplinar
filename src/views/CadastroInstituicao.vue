@@ -1,6 +1,7 @@
 <template>
 <v-container>
   <div class="inputs">
+   
     <v-text-field 
     label="NOME COMPLETO"></v-text-field>
     <v-text-field 
@@ -16,11 +17,10 @@
     </v-text-field>
     <v-text-field 
     label="SENHA"></v-text-field>
-  </div>
-<div class= "botoes">
-  <v-btn class= "mb-4">
-    Enviar
-  </v-btn>
+    </div>
+
+    <div class= "botoes">
+    <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
 </div>
   </v-container>
 </template>
