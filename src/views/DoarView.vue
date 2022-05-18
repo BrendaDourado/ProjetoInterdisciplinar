@@ -5,24 +5,28 @@
       <p>Detalhar o que vai ser doado com checkbox</p>
     </div>
     <div class="form">
-      <v-col class="col-checkbox" cols="6">
+      <v-col>
         <v-row class="checkbox">
-          <v-checkbox v-model="checkbox1" :label="`Agasalho:`"></v-checkbox>
+          <v-checkbox
+            class="v-checkbox"
+            v-model="checkbox1"
+            :label="`Agasalho`"
+          ></v-checkbox>
+          <v-checkbox
+            class="v-checkbox"
+            v-model="checkbox2"
+            :label="`Alimento`"
+          ></v-checkbox>
         </v-row>
-        <v-row class="checkbox">
-          <v-checkbox v-model="checkbox2" :label="`Alimento :`"></v-checkbox>
+
+        <v-row>
+          <v-col>
+              <v-text-field v-if="checkbox1" label="Peças" solo></v-text-field>
+
+              <v-text-field v-if="checkbox2" label="Kg" solo></v-text-field>
+          </v-col>
         </v-row>
       </v-col>
-      <v-col cols="6">
-        <v-row class="text-field">
-          <v-text-field label="Solo" solo></v-text-field>
-        </v-row>
-        <v-row class="text-field">
-          <v-text-field label="Solo" solo></v-text-field>
-        </v-row>
-      </v-col>
-      <v-col cols="auto"> </v-col>
-      <v-col cols="auto"> </v-col>
     </div>
     <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
   </v-container>
@@ -64,13 +68,12 @@ h1 {
   text-align: center;
   flex-wrap: wrap;
 }
-.checkbox{
-  justify-content:flex-end
+.checkbox {
+  justify-content: center;
+  margin: 10px;
 }
-.col-checkbox{
-  padding-right: 2rem;
+.v-checkbox {
+  margin-right: 1rem;
 }
-.text-field{
-  width: 7rem;
-}
+
 </style>
