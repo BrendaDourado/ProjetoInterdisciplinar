@@ -28,7 +28,49 @@
         </v-row>
       </v-col>
     </div>
-    <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
+    <v-btn class="mb-4"
+         @click="dialog=true"
+        >
+          DOAR
+        </v-btn>
+        <div class="text-center">
+   
+    <v-dialog
+      v-model="dialog"
+      width="500"
+    >
+
+      <v-card>
+        <v-card-title class="text-h5 grey lighten-2">
+          Usuário não Logado
+        </v-card-title>
+
+        <v-card-text>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis itaque voluptas numquam quae cum repellendus iusto nulla assumenda, recusandae libero quidem hic eum, neque deserunt vero repellat vel alias.
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="primary"
+            text
+            @click="dialog = false"
+          >
+            OK
+          </v-btn>
+          <v-btn
+            color="primary"
+            text
+            @click="$router.push('/LoginIn')"
+           >
+            Logar
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </div>
   </v-container>
 </template>
 <script>
@@ -37,6 +79,7 @@ export default {
     return {
       checkbox1: false,
       checkbox2: false,
+      dialog: false,
     };
   },
   methods: {
