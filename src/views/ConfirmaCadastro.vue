@@ -1,6 +1,6 @@
 <template>
     <div>
-    <h1>OLÁ {{name}}CADASTRO CONFIRMADO !!! SEJA BEM VINDO AO DONAVERSE</h1>
+    <h1>OLÁ {{name}} CADASTRO CONFIRMADO !!! SEJA BEM VINDO AO DONAVERSE</h1>
     <h3> para seguir para área logada </h3>
     <v-btn @click="$router.push('/HomeLogada')">  CLIQUE AQUI </v-btn>
     </div>

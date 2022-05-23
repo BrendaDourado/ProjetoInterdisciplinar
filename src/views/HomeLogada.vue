@@ -19,6 +19,10 @@
 <h3>Saldo</h3>
 
 </v-app-bar> 
+    <h1> Histórico de doações aqui </h1>
+    <h1> Que o JARED VAI ORIENTAR o MARLEY E FAZER</h1>
+
+    <v-btn @click="delay" color="blue" class="mr-4" type="submit"> VENHA DOAR </v-btn>
     </div>
 </template>
 
@@ -30,8 +34,17 @@ export default {
             email: localStorage.getItem("email")
         }  
     },
+
+methods: {
+    delay(){
+        setTimeout(()=>{
+          this.$router.push('DoarView')
+          },100)
+      }
+}
 }
 </script>
+
 <style scoped>
 
 .barlog {
