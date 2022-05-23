@@ -1,4 +1,24 @@
 <template>
+<div class="barlog" >
+    <v-app-bar
+  color="blue"
+  elevation="4"
+>
+<v-icon x-large aria-hidden="false">
+  mdi-account
+</v-icon>
+
+<div class="userdata" >
+  <h3 class="username">{{name}}</h3>
+  <span>{{email}}</span>
+</div>
+<v-spacer />
+<v-icon x-large aria-hidden="false">
+  mdi-hand-coin-outline
+</v-icon> 
+<h3>Saldo</h3>
+
+</v-app-bar> 
   <v-container fluid>
     <div class="titulo">
       <h1>O que você vai doar ?!</h1>
@@ -42,11 +62,11 @@
 
       <v-card>
         <v-card-title class="text-h5 grey lighten-2">
-          Usuário não Logado
+          MUITO OBRIGADA POR DOAR
         </v-card-title>
 
         <v-card-text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis itaque voluptas numquam quae cum repellendus iusto nulla assumenda, recusandae libero quidem hic eum, neque deserunt vero repellat vel alias.
+        textinho que o kelvin vai mandar pra gente
         </v-card-text>
 
         <v-divider></v-divider>
@@ -60,19 +80,15 @@
           >
             OK
           </v-btn>
-          <v-btn
-            color="primary"
-            text
-            @click="$router.push('/LoginIn')"
-           >
-            Logar
-          </v-btn>
+          
         </v-card-actions>
       </v-card>
     </v-dialog>
   </div>
   </v-container>
+  </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -80,6 +96,8 @@ export default {
       checkbox1: false,
       checkbox2: false,
       dialog: false,
+      name: localStorage.getItem("nome"),
+      email: localStorage.getItem("email")
     };
   },
   methods: {
@@ -93,6 +111,9 @@ export default {
 </script>
 
 <style scoped>
+.barlog {
+    margin-top:-20px;
+}
 h1 {
   font-size: 20px;
   margin-bottom: 10px;

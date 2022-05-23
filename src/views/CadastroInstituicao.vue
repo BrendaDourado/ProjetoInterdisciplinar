@@ -3,15 +3,17 @@
   <div class="inputs">
    
     <v-text-field 
-    label="NOME COMPLETO"></v-text-field>
+    label="RAZÃO SOCIAL"></v-text-field>
     <v-text-field 
-    label="NOME COMPLETO"></v-text-field>
+    label="NOME FANTASIA"></v-text-field>
     <v-text-field 
-    label="NOME COMPLETO"></v-text-field>
+    label="CNPJ"></v-text-field>
     <v-text-field 
-    label="NOME COMPLETO"></v-text-field>
+    label="ENDEREÇO"></v-text-field>
     <v-text-field 
-    label="NOME COMPLETO"></v-text-field>
+    label="CONTATO"></v-text-field>
+     <v-text-field 
+    label="EMAIL"></v-text-field>
     <v-text-field
     label="LOGIN">
     </v-text-field>

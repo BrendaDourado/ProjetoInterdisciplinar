@@ -4,15 +4,15 @@
     <v-text-field v-model="name"
     label="NOME COMPLETO"/>
     <v-text-field 
-    label="Data de Nascimento"/>
+    label="DATA DE NASCIMENTO"/>
     <v-text-field 
     label="CPF"/>
     <v-text-field 
-    label="Genero"/>
+    label="GÊNERO"/>
     <v-text-field 
-    label="Telefone"/>
+    label="TELEFONE"/>
     <v-text-field v-model="email"
-    label="Email"/>
+    label="EMAIL"/>
      <v-text-field 
     label="CEP"/>
      <v-text-field 

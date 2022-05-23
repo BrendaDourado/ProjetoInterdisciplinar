@@ -21,7 +21,7 @@ methods: {
     },
       delay(){
         setTimeout(()=>{
-          this.$router.push('DoarView')
+          this.$router.push('/LoginIn')
           },100)
 
   },
