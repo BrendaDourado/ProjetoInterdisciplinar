@@ -1,7 +1,7 @@
 <template>
      <div class="app-bottom-bar">
     <v-app-bar hide-on-scroll app>
-      
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer />
       <v-toolbar-title><h3><strong>Campanha de doação</strong> ICON </h3></v-toolbar-title>
       <v-spacer />
@@ -23,38 +23,43 @@
         <span>Dark Mode On</span>
       </v-tooltip>
     </v-app-bar>
-    <v-bottom-navigation :value="value" color="#6d6d6d" app grow>
-      <router-link to="/">
-        <v-btn>
-          <span>Início</span>
-          <v-icon>mdi-home</v-icon>
-        </v-btn>
-      </router-link>
 
-        <router-link to="/InstituicoesParceiras">
-        <v-btn>
-          <span>Instituições parceiras</span>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
+    >
+      <v-list class="text-left"
+        nav
+        dense
+      >
+        <v-list-item-group 
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-title><router-link to="/"><v-icon>mdi-home</v-icon> Início </router-link></v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+          <v-list-item-title><router-link to="/InstituicoesParceiras">
           <v-icon>mdi-store</v-icon>
-        </v-btn>
-        </router-link>
+          Instituições parceiras
+          </router-link></v-list-item-title>
+          </v-list-item>
 
-        <router-link to="/LoginIn">
-        <v-btn>
-          <span>Login</span>
+         <v-list-item>
+          <v-list-item-title><router-link to="/LoginIn">
           <v-icon>mdi-account</v-icon>
-        </v-btn>
-        </router-link>
+          Login
+          </router-link></v-list-item-title>
+          </v-list-item>
 
-      
 
-     <!-- <router-link to="/cadastrousuario">
-        <v-btn>
-          <span>Cadastro</span>
-          <v-icon>mdi-account</v-icon>
-        </v-btn>
-      </router-link> -->
-
-    </v-bottom-navigation>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -64,6 +69,7 @@ export default {
   data() {
     return {
       value: 0,
+    drawer: false,
     };
   },
   methods: {
@@ -92,3 +98,4 @@ export default {
     }
 
 </style>
+

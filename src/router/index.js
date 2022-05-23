@@ -7,6 +7,8 @@ import DoarView from '../views/DoarView'
 import CadastroInstituicao from '../views/CadastroInstituicao'
 import InstituicoesParceiras from '../views/InstituicoesParceiras'
 import AnaliseSugestao from '../views/AnaliseSugestao'
+import ConfirmaCadastro from '../views/ConfirmaCadastro'
+import HomeLogada from '../views/HomeLogada'
 
 Vue.use(VueRouter)
 
@@ -45,7 +47,18 @@ const routes = [
     path: '/AnaliseSugestao',
     name: 'AnaliseSugestao',
     component: AnaliseSugestao
+  },
+  {
+    path: '/ConfirmaCadastro',
+    name: 'ConfirmaCadastro',
+    component: ConfirmaCadastro
+  },
+  {
+    path: '/HomeLogada',
+    name: 'HomeLogada',
+    component: HomeLogada
   }
+ 
  
 ]
 

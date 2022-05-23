@@ -55,7 +55,6 @@ h1 {
   margin-bottom: 10px;
   color: black;
 }
-
 .container {
   margin-bottom: 80px;
   padding: 0 10;
@@ -75,5 +74,4 @@ h1 {
 .v-checkbox {
   margin-right: 1rem;
 }
-
 </style>
