@@ -4,7 +4,8 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer />
       <v-toolbar-title
-        ><h3><strong>Campanha de doação</strong> ICON</h3></v-toolbar-title
+        ><img v-if="!$vuetify.theme.dark" src="../assets/donav3rse-light.png"> 
+         <img v-else src="../assets/donav3rse-dark.png"> </v-toolbar-title
       >
       <v-spacer />
       <v-tooltip v-if="!$vuetify.theme.dark" bottom>
