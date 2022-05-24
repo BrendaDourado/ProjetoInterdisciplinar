@@ -1,5 +1,5 @@
 <template>
-    <div class="barlog" >
+<div class="barlog" >
     <v-app-bar
   color="blue"
   elevation="4"
@@ -48,7 +48,7 @@ methods: {
 <style scoped>
 
 .barlog {
-    margin-top:-16px;
+    margin-top:-20px;
 }
 .userdata {
     display: flex; 

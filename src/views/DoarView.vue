@@ -66,7 +66,19 @@
         </v-card-title>
 
         <v-card-text>
-        textinho que o kelvin vai mandar pra gente
+        <h1>Instituição mais próxima :</h1> 
+        <h3>CRECHE COMUNITÁRIA RAIO DE SOL.</h3>
+        <br>
+        <h1>Data para doação:</h1>
+        <h3> Você tem entre 1 a 15 de junho das 8 as 18 para realizar a sua entrega</h3>
+        <br>
+        <h1>PARABÉNS COM ESSA DOAÇÃO VOCÊ RECEBERÁ:</h1>
+        <br>
+        <h1>148 DONAPOINTS !!!!</h1>
+        <br>
+        <h1>E AINDA FARÁ UMA CRIANÇA FELIZ !!! </h1>
+        <h3>
+        Mais informações contate :  0800 7070</h3>
         </v-card-text>
 
         <v-divider></v-divider>
