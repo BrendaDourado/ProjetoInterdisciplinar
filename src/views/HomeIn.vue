@@ -14,9 +14,9 @@
                 <br />um Multiverso?!
               </h1>
               <p>
-                Somos um grupo de estudante na área de tecnologia, esta
-                aplicação voltado para doação é para tornar dinâmico a forma de
-                ajudar o próximo .
+                Somos um grupo de estudante na área de tecnologia, esta aplicação
+              feita para doação, foi totalmente pensada para dinamizar a ajuda
+              ao próximo.
               </p>
               <v-btn @click="delay" class="mr-4 btn-doar" type="submit">
                 VENHA DOAR
@@ -38,9 +38,9 @@
               <br />um Multiverso?!
             </h1>
             <p>
-              Somos um grupo de estudante na área de tecnologia, esta aplicação
-              voltado para doação é para tornar dinâmico a forma de ajudar o
-              próximo .
+             Somos um grupo de estudante na área de tecnologia, esta aplicação
+              feita para doação, foi totalmente pensada para dinamizar a ajuda
+              ao próximo.
             </p>
             <v-btn @click="delay" class="mr-4 btn-doar" type="submit">
               VENHA DOAR
@@ -76,7 +76,7 @@ export default {
 
 h1{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(0, 132, 209);
+  color: #002960;
 }
 img {
   max-width: 100%;
