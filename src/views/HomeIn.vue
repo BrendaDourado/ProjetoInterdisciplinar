@@ -1,32 +1,35 @@
 <template>
   <v-container>
-    <div class="mt-5 home-img">
-    </div>
+    <div class="mt-5 home-img"></div>
     <h1 class="text-home text-justify mt-5 ml-4 mr-4">
       descrição da ideia, com dashboards no futuro
     </h1>
-    <v-btn @click="delay" color="blue" class="mr-4" type="submit"> VENHA DOAR </v-btn>
+    <v-btn @click="delay" color="blue" class="mr-4" type="submit">
+      VENHA DOAR
+    </v-btn>
   </v-container>
 </template>
 
 <script>
 export default {
   data: () => ({
-     name: "HomeIn",
+    name: "HomeIn",
   }),
-methods: {
+  methods: {
     submit() {
       this.$refs.observer.validate();
-      
     },
-      delay(){
-        setTimeout(()=>{
-          this.$router.push('/LoginIn')
-          },100)
-
+    delay() {
+      setTimeout(() => {
+        if (localStorage.length > 0) {
+           this.$router.push('/DoarView');
+        } else {
+          this.$router.push("/LoginIn");
+        }
+      }, 100);
+    },
   },
-}
-}
+};
 </script>
 
 <style>
