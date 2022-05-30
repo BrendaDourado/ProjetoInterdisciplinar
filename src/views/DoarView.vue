@@ -124,7 +124,7 @@ export default {
 
 <style scoped>
 .barlog {
-    margin-top:-20px;
+    margin-top: -1.2rem;
 }
 h1 {
   font-size: 20px;
@@ -136,6 +136,9 @@ h1 {
   padding: 0 10;
   width: 100%;
   height: 100vh;
+}
+.username {
+  text-align: left;
 }
 .form {
   display: flex;
@@ -149,5 +152,10 @@ h1 {
 }
 .v-checkbox {
   margin-right: 1rem;
+}
+@media screen and (max-width: 959px) {
+  .barlog {
+    margin-top: -1.7rem;
+  }
 }
 </style>

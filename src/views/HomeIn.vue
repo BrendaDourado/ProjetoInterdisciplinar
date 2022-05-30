@@ -7,28 +7,32 @@
 <br>
     <h1> Somos um grupo de estudante na área de tecnologia, programamos web sistema voltado para doação, junto com a instituição iremos ajudar o próximo e se tornar dinâmico.
     </h1>
-    <v-btn @click="delay" color="blue" class="mr-4" type="submit"> VENHA DOAR </v-btn>
+    <v-btn @click="delay" color="blue" class="mr-4" type="submit">
+      VENHA DOAR
+    </v-btn>
   </v-container>
 </template>
 
 <script>
 export default {
   data: () => ({
-     name: "HomeIn",
+    name: "HomeIn",
   }),
-methods: {
+  methods: {
     submit() {
       this.$refs.observer.validate();
-      
     },
-      delay(){
-        setTimeout(()=>{
-          this.$router.push('/LoginIn')
-          },100)
-
+    delay() {
+      setTimeout(() => {
+        if (localStorage.length > 0) {
+           this.$router.push('/DoarView');
+        } else {
+          this.$router.push("/LoginIn");
+        }
+      }, 100);
+    },
   },
-}
-}
+};
 </script>
 
 <style>
