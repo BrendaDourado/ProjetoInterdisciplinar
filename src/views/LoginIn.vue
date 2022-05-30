@@ -33,7 +33,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn color="#002960" text @click="dialog = false"> ok </v-btn>
-              <v-btn color="#002960" text @click="dialog = false">
+              <v-btn color="#002960" text @click="$router.push('/CadastroCliente')">
 
                 CADASTRAR
               </v-btn>
