@@ -105,6 +105,7 @@ export default {
   methods: {
     home(){
       this.$router.push("/");
+    },
     sair(){
       localStorage.clear()
       this.$auth = false;
