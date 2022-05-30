@@ -6,7 +6,7 @@
     <br/>
     <h3>para seguir para área logada</h3>
       <br>
-    <v-btn color="blue" @click="$router.push('/HomeLogada')">
+    <v-btn class="btn" @click="$router.push('/HomeLogada')">
       CLIQUE AQUI
     </v-btn>
   </div>
@@ -20,3 +20,10 @@ export default {
   },
 };
 </script>
+
+<style scoped> 
+  .btn{
+  background-color: #002960 !important;
+  color: #fff;
+}
+</style>
