@@ -3,7 +3,7 @@
     <v-app-bar hide-on-scroll app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer />
-      <v-toolbar-title
+      <v-toolbar-title @click="home" style="cursor:pointer"
         ><img v-if="!$vuetify.theme.dark" src="../assets/donav3rse-light.png"> 
          <img v-else src="../assets/donav3rse-dark.png"> </v-toolbar-title
       >
@@ -88,6 +88,9 @@ export default {
     };
   },
   methods: {
+    home(){
+      this.$router.push("/");
+    },
     darkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
     },

@@ -1,4 +1,5 @@
 <template>
+<!-- Desktop-->
   <v-container v-if="screenWidth > 900">
     <v-col>
       <v-row>
@@ -26,6 +27,7 @@
       </v-row>
     </v-col>
   </v-container>
+  <!--Mobile e telas menores-->
   <v-container v-else>
     <v-col>
       <v-row>
