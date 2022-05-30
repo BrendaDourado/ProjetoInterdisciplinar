@@ -9,7 +9,7 @@
       ></v-text-field>
     </div>
     <div class="botoes">
-      <v-btn class="mb-4" @click="btnLogin"> LOGIN </v-btn>
+      <v-btn  color="blue" class="mb-4" @click="btnLogin"> LOGIN </v-btn>
 
       <div class="text-center">
         <v-dialog v-model="dialog" width="500">
@@ -30,8 +30,8 @@
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="primary" text @click="dialog = false"> ok </v-btn>
-              <v-btn color="primary" text @click="dialog = false">
+              <v-btn color="blue" text @click="dialog = false"> ok </v-btn>
+              <v-btn color="blue" text @click="$router.push('/CadastroCliente')">
                 CADASTRAR
               </v-btn>
             </v-card-actions>
@@ -40,7 +40,7 @@
       </div>
 
       <v-alert v-if="blogin" type="error"> Usuário não cadastrado !</v-alert>
-      <v-btn @click="$router.push('/CadastroCliente')"> CADASTRE-SE </v-btn>
+      <v-btn color="blue" @click="$router.push('/CadastroCliente')"> CADASTRE-SE </v-btn>
     </div>
   </v-container>
 </template>

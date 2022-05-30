@@ -68,7 +68,7 @@
       <v-col cols="auto"> </v-col>
     </div>
     <div class="botoes">
-      <v-btn @click="signup" class="mb-4"> Cadastrar </v-btn>
+      <v-btn  color="blue" @click="signup" class="mb-4"> Cadastrar </v-btn>
     </div>
   </v-container>
 </template>

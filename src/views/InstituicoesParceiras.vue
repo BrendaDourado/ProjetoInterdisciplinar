@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>Colocar aqui a lista e instituições parceiras</h1>
- <v-btn class= "mb-4" @click="$router.push('/CadastroInstituicao')">
+ <v-btn color="blue" class= "mb-4" @click="$router.push('/CadastroInstituicao')">
  QUERO CADASTRAR MINHA INSTITUIÇÃO
   </v-btn>
 </div>
