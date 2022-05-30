@@ -1,10 +1,10 @@
 <template>
 <div class="barlog" >
     <v-app-bar
-  color="blue"
   elevation="4"
+  class="app-bar" 
 >
-<v-icon x-large aria-hidden="false">
+<v-icon color="#fff" x-large aria-hidden="false">
   mdi-account
 </v-icon>
 
@@ -13,10 +13,10 @@
   <span>{{email}}</span>
 </div>
 <v-spacer />
-<v-icon x-large aria-hidden="false">
+<v-icon color="#fff" x-large aria-hidden="false">
   mdi-hand-coin-outline
 </v-icon> 
-<h3>Saldo</h3>
+<p style="margin-top: 1.9rem; margin-left: 0.7rem">Saldo: {{amount}}</p>
 
 </v-app-bar> 
   <v-container fluid>
@@ -48,7 +48,8 @@
         </v-row>
       </v-col>
     </div>
-    <v-btn color="blue" class="mb-4"
+    <v-btn class="mb-4 btn"
+
          @click="dialog=true"
         >
           DOAR
@@ -109,7 +110,8 @@ export default {
       checkbox2: false,
       dialog: false,
       name: localStorage.getItem("nome"),
-      email: localStorage.getItem("email")
+      email: localStorage.getItem("email"),
+      amount: "999"
     };
   },
   methods: {
@@ -131,6 +133,14 @@ h3{
 }
 .barlog {
     margin-top: -1.2rem;
+}
+.app-bar{ 
+  background-color: #002960 !important;
+  color: #fff
+}
+.btn{
+  background-color: #002960 !important;
+  color: #fff;
 }
 h1 {
   font-size: 20px;
