@@ -10,7 +10,7 @@
           <v-card class="home-right" elevation="4">
             <div class="div-card-right">
               <h1>
-                O donaverse é um universo de doações, ou poderiamos dizer...
+                O Donaverse é um universo de doações, ou poderiamos dizer...
                 <br />um Multiverso?!
               </h1>
               <p>
