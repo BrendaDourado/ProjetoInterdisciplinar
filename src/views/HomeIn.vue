@@ -1,5 +1,5 @@
 <template>
-<!-- Desktop-->
+  <!-- Desktop-->
   <v-container v-if="screenWidth > 900">
     <v-col>
       <v-row>
@@ -34,13 +34,13 @@
         <v-card class="home-right" elevation="4">
           <div class="div-card-right">
             <h1>
-              O donaverse é um universo de doações, ou poderiamos dizer...
+              O Donaverse é o universo de doações, ou poderiamos dizer...
               <br />um Multiverso?!
             </h1>
             <p>
               Somos um grupo de estudante na área de tecnologia, esta aplicação
-              voltado para doação é para tornar dinâmico a forma de ajudar o
-              próximo .
+              feita para doação, foi totalmente pensada para dinamizar a ajuda
+              ao próximo.
             </p>
             <v-btn @click="delay" class="mr-4 btn-doar" type="submit">
               VENHA DOAR
@@ -64,19 +64,18 @@ export default {
     },
     delay() {
       setTimeout(() => {
-        this.$router.push(this.$auth ? '/DoarView' : '/LoginIn');
+        this.$router.push(this.$auth ? "/DoarView" : "/LoginIn");
       }, 100);
     },
   },
 };
 </script>
 
-
 <style scoped>
-
-h1{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(0, 132, 209);
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #002960;
 }
 img {
   max-width: 100%;
@@ -113,4 +112,3 @@ img {
   background-position-y: -60px;
 }
 </style>
-
