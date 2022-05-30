@@ -1,8 +1,11 @@
 <template>
   <v-container>
-    <div class="mt-5 home-img"></div>
-    <h1 class="text-home text-justify mt-5 ml-4 mr-4">
-      descrição da ideia, com dashboards no futuro
+    <div class="mt-5 home-img">
+    </div>
+    <h1>
+      O donaverse é um universo de doações , um universo paralelo onde...</h1>
+<br>
+    <h1> Somos um grupo de estudante na área de tecnologia, programamos web sistema voltado para doação, junto com a instituição iremos ajudar o próximo e se tornar dinâmico.
     </h1>
     <v-btn @click="delay" color="blue" class="mr-4" type="submit">
       VENHA DOAR

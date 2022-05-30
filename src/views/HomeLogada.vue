@@ -43,6 +43,7 @@ export default {
 
 .barlog {
   margin-top: -1.2rem;
+
 }
 .userdata {
   display: flex;
