@@ -32,7 +32,8 @@
     <v-col>
       <v-row>
         <v-card class="home-right" elevation="4">
-          <div class="div-card-right">
+          <div style="margin-top: -11rem;" class="div-card-right">
+            <img src="../assets/logo.png">
             <h1>
               O donaverse é um universo de doações, ou poderiamos dizer...
               <br />um Multiverso?!
