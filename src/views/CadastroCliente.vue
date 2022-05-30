@@ -1,6 +1,7 @@
 <template>
   <v-container>
-    <div class="inputs">
+    <!-- Telas pequenas e dispositivos moveis-->
+    <div v-if="screenWidth > 600" class="inputs">
       <v-col cols="auto"> </v-col>
       <v-col cols="auto">
         <v-row>
@@ -43,7 +44,12 @@
             />
           </v-col>
           <v-col cols="7">
-            <v-text-field type="text" :value="logradouro" label="Endereço" />
+            <v-text-field
+              type="text"
+              :value="logradouro"
+              label="Endereço"
+              readonly
+            />
           </v-col>
           <v-col cols="2">
             <v-text-field type="text" label="Numero" />
@@ -51,7 +57,7 @@
         </v-row>
         <v-row>
           <v-col cols="5">
-            <v-text-field label="Complemento" :value="complemento" readonly />
+            <v-text-field label="Complemento" :value="complemento" />
           </v-col>
           <v-col cols="3">
             <v-text-field label="Bairro" :value="bairro" readonly />
@@ -63,6 +69,40 @@
             <v-text-field label="UF" :value="uf" readonly />
           </v-col>
         </v-row>
+      </v-col>
+
+      <v-col cols="auto"> </v-col>
+    </div>
+    <!-- Telas maiores e desktops-->
+    <div v-else class="inputs">
+      <v-col cols="auto"> </v-col>
+
+      <v-col cols="auto">
+        <v-text-field v-model="name" label="Nome Completo" />
+        <v-text-field type="date" label="Data de Nascimento" />
+        <v-text-field label="CPF" />
+        <v-text-field label="Gênero" />
+        <v-text-field label="Telefone" />
+        <v-text-field v-model="email" label="Email" />
+        <v-text-field type="password" label="Senha" />
+        <v-text-field type="password" label="Confirmação de Senha" />
+        <v-text-field
+          v-model="cep"
+          @focusout="valueInputs"
+          @keyup="searchCep()"
+          label="CEP"
+        />
+        <v-text-field
+          type="text"
+          :value="logradouro"
+          label="Endereço"
+          readonly
+        />
+        <v-text-field type="text" label="Numero" />
+        <v-text-field label="Complemento" :value="complemento" />
+        <v-text-field label="Bairro" :value="bairro" readonly />
+        <v-text-field label="Cidade" :value="cidade" readonly />
+        <v-text-field label="UF" :value="uf" readonly />
       </v-col>
 
       <v-col cols="auto"> </v-col>
@@ -86,6 +126,7 @@ export default {
       bairro: null,
       cidade: null,
       uf: null,
+      screenWidth: window.screen.width,
     };
   },
   methods: {
@@ -96,6 +137,7 @@ export default {
       this.bairro = this.data["bairro"];
       this.cidade = this.data["localidade"];
       this.uf = this.data["uf"];
+      console.log(this.screenWidth);
     },
     searchCep() {
       const axios = require("axios").default;
