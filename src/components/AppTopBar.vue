@@ -64,14 +64,23 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/LoginIn">
+          <router-link v-if="!$auth" to="/LoginIn">
             <v-list-item>
               <v-list-item-title>
                 <v-icon>mdi-account</v-icon>
                 Login
               </v-list-item-title>
             </v-list-item>
-          </router-link>
+            </router-link>
+            <router-link v-else @click.native="sair" to="#">
+              <v-list-item>
+              <v-list-item-title>
+                <v-icon>mdi-account</v-icon>
+                Logoff
+              </v-list-item-title>
+              </v-list-item>
+            </router-link>
+         
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -79,8 +88,14 @@
 </template>
 
 <script>
+//import router from '@/router';
 export default {
   name: "BottomBar",
+  computed: {
+    auth: function(){
+      return localStorage.length
+    }
+  },
   data() {
     return {
       value: 0,
@@ -88,6 +103,11 @@ export default {
     };
   },
   methods: {
+    sair(){
+      localStorage.clear()
+      this.$auth = false;
+      this.$router.push("/")
+    },
     darkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
     },

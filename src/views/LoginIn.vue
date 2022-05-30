@@ -66,6 +66,7 @@ export default {
 
       } else {
         this.$router.push("/DoarView");
+        this.$auth = true;
       }
     },
   },

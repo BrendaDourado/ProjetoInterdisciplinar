@@ -14,7 +14,7 @@
     <h1>Histórico de doações aqui</h1>
     <h1>Que o JARED VAI ORIENTAR o MARLEY E FAZER</h1>
 
-    <v-btn @click="delay" color="blue" class="mr-4" type="submit">
+    <v-btn  @click="delay" color="blue" class="mr-4" type="submit">
       VENHA DOAR
     </v-btn>
   </div>

@@ -31,11 +31,7 @@ export default {
     },
     delay() {
       setTimeout(() => {
-        if (localStorage.length > 0) {
-           this.$router.push('/DoarView');
-        } else {
-          this.$router.push("/LoginIn");
-        }
+        this.$router.push(this.$auth ? '/DoarView' : '/LoginIn');
       }, 100);
     },
   },

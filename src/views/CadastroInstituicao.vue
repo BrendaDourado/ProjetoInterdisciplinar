@@ -22,7 +22,7 @@
     </div>
 
     <div class= "botoes">
-    <v-btn @click="delay" class="mr-4" type="submit"> enviar </v-btn>
+    <v-btn  color="blue" @click="delay" class="mr-4" type="submit"> enviar </v-btn>
 </div>
   </v-container>
 </template>
