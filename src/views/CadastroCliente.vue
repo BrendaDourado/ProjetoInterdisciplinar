@@ -159,8 +159,9 @@ export default {
         return alert("dados inválidos");
       }
       this.saveData();
+      this.$auth = true;
       setTimeout(() => {
-        this.$router.push("/ConfirmaCadastro");
+        window.location.href = "/ConfirmaCadastro";
       }, 100);
     },
   },

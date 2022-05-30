@@ -9,7 +9,9 @@
       ></v-text-field>
     </div>
     <div class="botoes">
+
       <v-btn class="mb-4 btn" @click="btnLogin"> LOGIN </v-btn>
+
 
       <div class="text-center">
         <v-dialog v-model="dialog" width="500">
@@ -32,6 +34,7 @@
               <v-spacer></v-spacer>
               <v-btn color="#002960" text @click="dialog = false"> ok </v-btn>
               <v-btn color="#002960" text @click="dialog = false">
+
                 CADASTRAR
               </v-btn>
             </v-card-actions>
@@ -40,7 +43,9 @@
       </div>
 
       <v-alert v-if="blogin" type="error"> Usuário não cadastrado !</v-alert>
+
       <v-btn class="btn" @click="$router.push('/CadastroCliente')"> CADASTRE-SE </v-btn>
+
     </div>
   </v-container>
 </template>
@@ -66,6 +71,7 @@ export default {
 
       } else {
         this.$router.push("/DoarView");
+        this.$auth = true;
       }
     },
   },

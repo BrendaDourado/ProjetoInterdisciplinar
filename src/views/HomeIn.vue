@@ -64,21 +64,21 @@ export default {
     },
     delay() {
       setTimeout(() => {
-        if (localStorage.length > 0) {
-          this.$router.push("/DoarView");
-        } else {
-          this.$router.push("/LoginIn");
-        }
+        this.$router.push(this.$auth ? '/DoarView' : '/LoginIn');
       }, 100);
     },
   },
 };
 </script>
 
-<style>
-.home-img {
-  display: flex;
-  justify-content: center;
+
+<style scoped>
+
+h1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 132, 209);
+}
+img {
   max-width: 100%;
   margin-top: 4rem;
 }
@@ -113,3 +113,4 @@ export default {
   background-position-y: -60px;
 }
 </style>
+

@@ -49,6 +49,7 @@
       </v-col>
     </div>
     <v-btn class="mb-4 btn"
+
          @click="dialog=true"
         >
           DOAR
@@ -86,7 +87,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-            color="primary"
+            color="blue"
             text
             @click="dialog = false"
           >
@@ -124,6 +125,12 @@ export default {
 </script>
 
 <style scoped>
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+
+}
 .barlog {
     margin-top: -1.2rem;
 }

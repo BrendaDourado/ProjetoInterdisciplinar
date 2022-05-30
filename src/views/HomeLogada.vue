@@ -15,6 +15,7 @@
     <h1>Que o JARED VAI ORIENTAR o MARLEY E FAZER</h1>
 
     <v-btn @click="delay" class="mr-4 btn" type="submit">
+
       VENHA DOAR
     </v-btn>
   </div>
