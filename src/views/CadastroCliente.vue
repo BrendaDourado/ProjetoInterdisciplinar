@@ -108,7 +108,7 @@
       <v-col cols="auto"> </v-col>
     </div>
     <div class="botoes">
-      <v-btn @click="signup" class="mb-4"> Cadastrar </v-btn>
+      <v-btn @click="signup" class="mb-4 btn-cadastro"> Cadastrar </v-btn>
     </div>
   </v-container>
 </template>
@@ -179,5 +179,9 @@ h1 {
   padding: 0 10;
   width: 100%;
   height: 100vh;
+}
+.btn-cadastro{
+  background-color: #002960 !important;
+  color: #fff;
 }
 </style>
